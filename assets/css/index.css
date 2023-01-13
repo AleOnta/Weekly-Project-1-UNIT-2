@@ -236,3 +236,21 @@ main {
 .duration {
   color: gray;
 }
+
+/* CSS for the article section */
+
+#articleSection {
+  max-width: 1192px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#articleSection article {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.articleImg {
+  width: 200px;
+  height: 150px;
+}
