@@ -32,12 +32,14 @@
             </ul>
           </nav>
         </div>
-        <div class="mar" id="mainHeader">
-          <div style="position: absolute; right: 0"></div>
-          <div id="heroTextContainer">
-            <em><h2>Stay Curious.</h2></em>
-            <p>Discover stories, thinking, and expertise<br />from writers on any topic.</p>
-            <button>Start reading</button>
+        <div class="mar" id="mainHeaderContainer">
+          <div id="mainHeader">
+            <div id="mDisplayer"></div>
+            <div id="heroTextContainer">
+              <em><h2>Stay Curious.</h2></em>
+              <p>Discover stories, thinking, and expertise<br />from writers on any topic.</p>
+              <button>Start reading</button>
+            </div>
           </div>
         </div>
       </header>
@@ -52,13 +54,14 @@
               <div class="rank">01</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">T</div>
+                  <img class="pic" src="./assets/imgs/image01.jpeg" />
                   <p class="author">Tom Cooper</p>
                 </div>
                 <h3 class="title">Ukraine War, 23 October 2022</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 23</p>
-                  <p class="duration">·5 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">5 min read</p>
                 </div>
               </div>
             </article>
@@ -66,13 +69,14 @@
               <div class="rank" 02>02</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">A</div>
+                  <img class="pic" src="./assets/imgs/image02.png" />
                   <p class="author">Arthur Hayes in Entrepreneur's Handbook</p>
                 </div>
                 <h3 class="title">Comeback</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 26</p>
-                  <p class="duration">·24 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">24 min read</p>
                 </div>
               </div>
             </article>
@@ -80,13 +84,14 @@
               <div class="rank">03</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">T</div>
+                  <img class="pic" src="./assets/imgs/image03.jpeg" />
                   <p class="author">Tom Cooper</p>
                 </div>
                 <h3 class="title">How I Learned to Love My Breasts Even Though One Is A Horcrux For Voldemort</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 26</p>
-                  <p class="duration">·2 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">2 min read</p>
                 </div>
               </div>
             </article>
@@ -94,13 +99,15 @@
               <div class="rank">04</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">F</div>
+                  <img class="pic" src="./assets/imgs/image04.png" />
                   <p class="author">Frank Mastropolo in The Riffk</p>
                 </div>
                 <h3 class="title">The Night Paul McCartney Donned a Disguise at Fillmore East</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 22</p>
-                  <p class="duration">·3 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">3 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
                 </div>
               </div>
             </article>
@@ -108,13 +115,15 @@
               <div class="rank">05</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">F</div>
+                  <img class="pic" src="./assets/imgs/image05.jpeg" />
                   <p class="author">Frank Andrade in Towards Data Science</p>
                 </div>
                 <h3 class="title">5 Python Projects to Automate Your Life: From Beginner to Advanced</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 13</p>
-                  <p class="duration">·6 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">6 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
                 </div>
               </div>
             </article>
@@ -122,13 +131,15 @@
               <div class="rank">06</div>
               <div class="articleContent">
                 <div class="authorProfile">
-                  <div class="pic">W</div>
+                  <img class="pic" src="./assets/imgs/image06.png" />
                   <p class="author">Wesley Smits in JavaScript in Plain English</p>
                 </div>
                 <h3 class="title">How To Make Visual Studio Code Look Amazing</h3>
-                <div>
+                <div class="articleData">
                   <p class="date">Oct 20</p>
-                  <p class="duration">·7 min read</p>
+                  <p style="padding: 2px">·</p>
+                  <p class="duration">7 min read</p>
+                  <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
                 </div>
               </div>
             </article>
@@ -136,153 +147,237 @@
         </section>
         <section id="articleSection" class="mar">
           <div id="articleContainer">
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">R</div>
-                  <p class="author">Robert Roy Britt</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image07.jpeg" alt="profile picture">
+                  <p>Robert Roy Britt</p>
                 </div>
-                <h3 class="title">How Old is Old?</h3>
-                <p class="paragraph">
-                  What we consider “old” changes dramatically with age, and our perspectives can be predictive of how
-                  well we age
-                </p>
-                <div>
-                  <p class="date">Oct 27</p>
-                  <p class="duration">·5 min read</p>
-                  <div class="thread">Aging</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>How Old is Old?</h3>
+                  <p>
+                    What we consider “old” changes dramatically with age, and our perspectives can be predictive of how
+                    well we age
+                  </p>
                 </div>
-                <img class="articleImg" src="./assets/imgs/image08.jpeg" alt="photo of three persons" />
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Oct 27</p>
+                    <p>·</p>
+                    <p>5 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Aging</p>
+                    <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="imgContainer">
+                <img src="./assets/imgs/image08.jpeg" alt="photo of three persons" />
               </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">T</div>
-                  <p class="author">Taru Anniina Liikanen</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image09.jpeg" alt="profile picture">
+                  <p>Taru Anniina Liikanen</p>
                 </div>
-                <h3 class="title">Is Taylor Swift Allowed to Speak About Fat?</h3>
-                <p class="paragraph">Can you speak about your trauma if you don't look traumatized?</p>
-                <div>
-                  <p class="date">Oct 24</p>
-                  <p class="duration">·6 min read</p>
-                  <div class="thread">Health</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
+                  <p>Can you speak about your trauma if you don't look traumatized?</p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Oct 24</p>
+                    <p>·</p>
+                    <p>6 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Health</p>
+                    <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image10.jpeg" alt="photo of Taylor Swift" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image10.jpeg" alt="photo of Taylor Swift" />
+              </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">D</div>
-                  <p class="author">David Rodenas, Ph. D.</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image11.jpeg" alt="profile picture">
+                  <p>David Rodenas, Ph. D.</p>
                 </div>
-                <h3 class="title">Don’t Screw Up, You Will Be Found Guilty</h3>
-                <p class="paragraph">
-                  Software Engineer, yours is the right to produce high-quality work at all times, also the liability.
-                </p>
-                <div>
-                  <p class="date">Oct 15</p>
-                  <p class="duration">·5 min read</p>
-                  <div class="thread">Software Engeneering</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>Don’t Screw Up, You Will Be Found Guilty</h3>
+                  <p>
+                    Software Engineer, yours is the right to produce high-quality work at all times, also the liability.
+                  </p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Oct 15</p>
+                    <p>·</p>
+                    <p>·5 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Software Engineering</p>
+                    <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image12.png" alt="draw of persons" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image12.png" alt="" />
+              </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">M</div>
-                  <p class="author">Microsoft Design</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image13.png" alt="Microsoft Logo">
+                  <p>Microsoft Design</p>
                 </div>
-                <h3 class="title">Leave No Trace</h3>
-                <p class="paragraph">How product designers can break from the status quo and help our planet</p>
-                <div>
-                  <p class="date">Oct 25</p>
-                  <p class="duration">·11 min read</p>
-                  <div class="thread">Sustainability</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>Leave No Trace</h3>
+                  <p>How product designers can break from the status quo and help our planet</p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Oct 25</p>
+                    <p>·</p>
+                    <p>11 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Sustainability</p>
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image14.png" alt="draw" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image14.png" alt="a forest draw" />
+              </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">S</div>
-                  <p class="author">Scott H. Young</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image15.jpeg" alt="Profile picture">
+                  <p>Scott H. Young</p>
                 </div>
-                <h3 class="title">Variability, Not Repetition, is the Key to Mastery</h3>
-                <p class="paragraph">
-                  Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the
-                  man who has practiced one kick 10,000...
-                </p>
-                <div>
-                  <p class="date">Oct 26</p>
-                  <p class="duration">·7 min read</p>
-                  <div class="thread">Health</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+                  <p>
+                    Bruce Lee is reported to have said, “I fear not the man who has practiced 10,000 kicks once, but the
+                    man who has practiced one kick 10,000...
+                  </p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Oct 26</p>
+                    <p>·</p>
+                    <p>7 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Health</p>
+                    <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image16.jpg" alt="photo of Bruce Lee" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image16.jpg" alt="Bruce Lee photo" />
+              </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">P</div>
-                  <p class="author">Paul A. DeStefanoin Human Parts</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image17.png" alt="Profile picture">
+                  <p>Paul A. DeStefanoin Human Parts</p>
                 </div>
-                <h3 class="title">What I Overheard as an Escape Room Actor</h3>
-                <p class="paragraph">Lock a group of people in a room and you’ll witness some surprising confessions</p>
-                <div>
-                  <p class="date">Jan 18</p>
-                  <p class="duration">·6 min read</p>
-                  <div class="thread">Experiences</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>What I Overheard as an Escape Room Actor</h3>
+                  <p>Lock a group of people in a room and you’ll witness some surprising confessions</p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Jan 18</p>
+                    <p>·</p>
+                    <p>6 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Experiences</p>
+                    <img src="./assets/imgs/svg/star.svg" alt="picture of a little star" />
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image18.jpeg" alt="room painted in red" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image18.jpeg" alt="red painted room" />
+              </div>
             </article>
-            <article class="commonArticle">
-              <div class="articleContent">
-                <div class="authorProfile">
-                  <div class="pic">K</div>
-                  <p class="author">Kim Scott</p>
+            <article class="mainArticle">
+              <div id="textContainer">
+                <div class="credits main">
+                  <img class="pic main"" src="./assets/imgs/image19.jpeg" alt="Profile picture">
+                  <p>Paul A. DeStefanoin Human Parts</p>
                 </div>
-                <h3 class="title">6 Steps for Setting Measurable Goals to Avoid “Productivity Paranoia”</h3>
-                <p class="paragraph">
-                  With more people working in remote and hybrid environments than ever before, company, team and
-                  individual goals must be explicit and…
-                </p>
-                <div>
-                  <p class="date">Oct 24</p>
-                  <p class="duration">·6 min read</p>
-                  <div class="thread">Health</div>
-                  <img src="./assets/imgs/svg/star.svg" alt="litte picture of a star" />
+                <div class="articleContent main">
+                  <h3>What I Overheard as an Escape Room Actor</h3>
+                  <p>Lock a group of people in a room and you’ll witness some surprising confessions</p>
+                </div>
+                <div class="articleData main">
+                  <div class="textData">
+                    <p>Jan 18</p>
+                    <p>·</p>
+                    <p>6 min read</p>
+                    <p>·</p>
+                    <p class="thread main">Experiences</p>
+                  </div>
+                  <div class="addPng">
+                    <img src="./assets/imgs/svg/bookmark.svg" alt="" />
+                  </div>
                 </div>
               </div>
-              <img class="articleImg" src="./assets/imgs/image20.jpg" alt="photo of a meeting" />
+              <div class="imgContainer">
+                <img src="./assets/imgs/image20.jpg" alt="meeting photo" />
+              </div>
             </article>
           </div>
           <aside>
             <div id="interestFilter">
               <p>DISCOVER MORE OF WHAT MATTER TO YOU</p>
               <div id="threadContainer">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button>Programming</button>
+                <button>Data Science</button>
+                <button>Technology</button>
+                <button>Self Improvement</button>
+                <button>Writing</button>
+                <button>Relationships</button>
+                <button>Machine Learning</button>
+                <button>Productivity</button>
+                <button>Politics</button>
               </div>
             </div>
-            <div id="footer?"></div>
+            <div id="footer">
+              <ul>
+                <li>Help</li>
+                <li>Status</li>
+                <li>Writer</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>About</li>
+                <li>Knowable</li>
+              </ul>
+            </div>
           </aside>
         </section>
       </main>
