@@ -23,8 +23,8 @@ let mAnimator;
 
 console.log(gArray);
 const mDisplayer = () => {
-  const mOne = Math.floor(Math.random() * 560 + 1);
-  const mTwo = Math.floor(Math.random() * 560 + 1);
+  const mOne = Math.floor(Math.random() * 560);
+  const mTwo = Math.floor(Math.random() * 560);
 
   if (gArray[mOne].style.opacity === "0") {
     gArray[mOne].style.opacity = "1";
