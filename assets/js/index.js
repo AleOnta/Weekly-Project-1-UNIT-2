@@ -16,14 +16,15 @@ const scrollingNavbar = () => {
   }
 };
 
-const onlyLastG = document.querySelectorAll("g");
+const onlyLastG = document.querySelectorAll("#gContainer > g");
 const gArray = Array.from(onlyLastG);
 
 let mAnimator;
 
+console.log(gArray);
 const mDisplayer = () => {
-  const mOne = Math.floor(Math.random() * 1950 + 1);
-  const mTwo = Math.floor(Math.random() * 1950 + 1);
+  const mOne = Math.floor(Math.random() * 560 + 1);
+  const mTwo = Math.floor(Math.random() * 560 + 1);
 
   if (gArray[mOne].style.opacity === "0") {
     gArray[mOne].style.opacity = "1";
