@@ -136,6 +136,7 @@ li > button {
 }
 
 #heroTextContainer h2 {
+  letter-spacing: -8px;
   font-size: 7em;
   color: black;
   font-family: "Spectral", serif;
@@ -828,4 +829,123 @@ aside {
   }
 }
 
-/* Class for the navBar on scroll */
+@media screen and (max-width: 550px) {
+  /* 550px layout for the navBar */
+
+  nav #navList {
+    justify-content: space-between;
+  }
+
+  #navList .navLink {
+    font-size: 13px;
+  }
+
+  nav li > button {
+    margin-left: 15%;
+  }
+  /* 550px layout for the main article section of the webpage */
+  #textContainer {
+    width: 60%;
+  }
+
+  .imgContainer {
+    max-width: 40%;
+  }
+
+  .credits p {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+
+  .articleContent.main h3 {
+    font-size: 1.2em;
+    line-height: 1.1;
+    padding-top: 3%;
+  }
+
+  .articleContent.main p {
+    width: 90%;
+    height: 45px;
+    font-size: 1em;
+    line-height: 1.2;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    text-overflow: ellipsis;
+  }
+
+  .textData {
+    width: 100%;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  /* 550px for the footer section */
+  #footer li {
+    font-size: 1rem;
+  }
+
+  .footerItem {
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #heroTextContainer h2 {
+    font-size: 4.5em;
+    padding-bottom: 4%;
+  }
+
+  #heroTextContainer p {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-bottom: 6%;
+  }
+
+  #heroTextContainer button {
+    width: 35%;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* 500px layout for the header section */
+  nav #spacing {
+    width: 10%;
+    height: 100%;
+  }
+
+  nav #navList {
+    width: 65%;
+    justify-content: space-between;
+  }
+
+  nav li > button {
+    margin-left: 0;
+    margin-right: 10%;
+  }
+  /* 500px layout for the trending section of the main */
+  .articleContent {
+    justify-content: space-between;
+  }
+
+  .rank {
+    width: auto;
+  }
+
+  .authorProfile {
+    padding: 0;
+  }
+
+  .author {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .articleData {
+    font-size: 16px;
+  }
+}
