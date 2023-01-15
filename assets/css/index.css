@@ -29,18 +29,27 @@ header {
   max-height: 530px;
   background-color: #ffc017;
   border-bottom: 1px solid black;
+  position: relative;
+  overflow: hidden;
 }
 header #navContainer {
   width: 100%;
   height: 20%;
   max-height: 80px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  transition: 0.5s;
+  background-color: #ffc017;
+
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
 }
 
 nav {
   width: 100%;
+  height: 80px;
   max-width: 1192px;
 
   display: flex;
@@ -83,16 +92,14 @@ li > button {
   border: none;
   background-color: black;
   font-family: "Roboto", sans-serif;
+  transition: 0.5s;
 }
 
 /* CSS for the main section of the header */
 
 #mainHeaderContainer {
   width: 90%;
-  min-width: 1280px;
-  overflow: hidden;
   height: 85%;
-  position: relative;
 
   display: flex;
   justify-content: center;
@@ -103,6 +110,7 @@ li > button {
   position: absolute;
   overflow: hidden;
   right: 0;
+  top: 75px;
   width: 580px;
   height: auto;
 }
@@ -424,6 +432,11 @@ aside {
 /* MEDIA QUERIES for responsiveness */
 
 @media screen and (max-width: 1199px) {
+  #heroTextContainer h2 {
+    font-size: 6.5em;
+    padding-bottom: 3%;
+  }
+
   /* Tablet layout for the trending section */
   .trending {
     justify-content: space-evenly;
@@ -576,6 +589,13 @@ aside {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  #mDisplayer {
+    right: -100px;
+    top: 75px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   /* 1000px for navBar */
   #navList .navLink {
@@ -595,13 +615,18 @@ aside {
 
   #heroTextContainer p {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 400;
     padding-bottom: 6%;
   }
 
   #heroTextContainer button {
     width: 25%;
     font-size: 1.4em;
+  }
+
+  #mDisplayer {
+    right: -200px;
+    top: 75px;
   }
 
   /* 1000px for the trending section of the main */
@@ -653,6 +678,11 @@ aside {
 
   .title {
     font-size: 0.9em;
+  }
+
+  #mDisplayer {
+    right: -250px;
+    top: 75px;
   }
 }
 
@@ -792,3 +822,5 @@ aside {
     text-align: center;
   }
 }
+
+/* Class for the navBar on scroll */
