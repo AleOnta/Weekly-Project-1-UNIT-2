@@ -21,7 +21,6 @@ const gArray = Array.from(onlyLastG);
 
 let mAnimator;
 
-console.log(gArray);
 const mDisplayer = () => {
   const mOne = Math.floor(Math.random() * 560);
   const mTwo = Math.floor(Math.random() * 560);
