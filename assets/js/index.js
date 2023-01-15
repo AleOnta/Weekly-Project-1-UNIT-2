@@ -15,3 +15,29 @@ const scrollingNavbar = () => {
     navButton.style.backgroundColor = "black";
   }
 };
+
+const onlyLastG = document.querySelectorAll("g");
+const gArray = Array.from(onlyLastG);
+
+let mAnimator;
+
+const mDisplayer = () => {
+  const mOne = Math.floor(Math.random() * 1950 + 1);
+  const mTwo = Math.floor(Math.random() * 1950 + 1);
+
+  if (gArray[mOne].style.opacity === "0") {
+    gArray[mOne].style.opacity = "1";
+  } else {
+    gArray[mOne].style.opacity = "0";
+  }
+
+  if (gArray[mTwo].style.opacity === "0") {
+    gArray[mTwo].style.opacity = "1";
+  } else {
+    gArray[mTwo].style.opacity = "0";
+  }
+};
+
+mAnimator = setInterval(mDisplayer, 90);
+
+mDisplayer();
